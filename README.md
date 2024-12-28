@@ -1,1 +1,103 @@
-# business-qa-chatbot
+# Business QA Chatbot
+
+## Overview
+The Business QA Chatbot is an intelligent question-answering system designed to provide accurate and relevant answers to business-related queries. It leverages OpenAI's GPT-4, LangChain, Pinecone, and Streamlit to deliver a seamless and interactive experience.
+
+## Features
+- **Natural Language Processing**: Understands and processes user queries in natural language.
+- **Contextual Responses**: Provides accurate answers based on the context of the conversation.
+- **Interactive Interface**: User-friendly interface built with Streamlit.
+- **Scalable**: Uses Pinecone for efficient and scalable vector search.
+
+## Project Structure
+
+business-qa-chatbot/
+├── Openai_Pinecone_Indexing_.ipynb  # Jupyter Notebook for indexing documents
+├── app.py                           # Main application file
+├── utils.py                         # Utility functions for the chatbot
+├── requirements.txt                 # Python dependencies
+└── README.md                        # Project documentation
+
+
+## Getting Started
+
+### Prerequisites
+- Python 3.8 or higher
+- An OpenAI API key
+- A Pinecone API key
+
+### Installation
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/adolui-2002/business-qa-chatbot.git
+    cd business-qa-chatbot
+    ```
+
+2. Create a virtual environment and activate it:
+    ```sh
+    python -m venv venv
+    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+    ```
+
+3. Install the required packages:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. Set up environment variables:
+    - Create a `.env` file in the root directory with the following content:
+      ```env
+      OPENAI_API_KEY=your_openai_api_key
+      PINECONE_API_KEY=your_pinecone_api_key
+      ```
+
+### Running the Application
+1. Start the Streamlit application:
+    ```sh
+    streamlit run app.py
+    ```
+
+2. Open your web browser and navigate to `http://localhost:8501` to interact with the chatbot.
+
+## Usage
+- Enter your query in the input box and press Enter.
+- The chatbot will process your query and provide a relevant response based on the indexed documents.
+
+## Customization
+### Indexing New Documents
+- To index new documents, modify the `Openai_Pinecone_Indexing_.ipynb` notebook:
+  - Update the `directory` variable to point to your document directory.
+  - Run the notebook to index the new documents.
+
+### Refining Queries
+- The `utils.py` file contains functions for refining queries and finding matches. You can customize these functions to improve the chatbot's performance based on your specific use case.
+
+## Contributing
+Contributions are welcome! Please fork the repository and create a pull request with your changes.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+- [OpenAI](https://openai.com) for providing the GPT-4 model.
+- [Pinecone](https://www.pinecone.io) for the vector database service.
+- [Streamlit](https://streamlit.io) for the interactive web framework.
+- [LangChain](https://langchain.com) for providing tools to build language model-powered applications.
+
+## Contact
+If you have any questions or suggestions, feel free to open an issue or contact me at [your-email@example.com].
+```
+
+### Key Sections Explained:
+- **Overview**: A brief description of the project and its purpose.
+- **Features**: Highlights the main features of the chatbot.
+- **Project Structure**: Provides a visual representation of the project directory.
+- **Getting Started**: Instructions on how to set up the project.
+- **Usage**: Explains how to interact with the chatbot.
+- **Customization**: Guides on how to index new documents and refine the chatbot's behavior.
+- **Contributing**: Encourages others to contribute to the project.
+- **License**: States the project's license.
+- **Acknowledgments**: Credits the tools and services used in the project.
+- **Contact**: Provides a way for users to reach out with questions or suggestions.
+
+Make sure to replace placeholders like `your_openai_api_key`, `your_pinecone_api_key`, and `your-email@example.com` with actual values before using the README.
