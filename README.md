@@ -1,11 +1,12 @@
-# Business QA Chatbot
+# RAG-Based Chatbot with LangChain, ChatGPT, Pinecone, and Streamlit
 
 ## Overview
-The Business QA Chatbot is an intelligent question-answering system designed to provide accurate and relevant answers to business-related queries. It leverages OpenAI's GPT-4, LangChain, Pinecone, and Streamlit to deliver a seamless and interactive experience.
+The Business QA Chatbot is an intelligent question-answering system designed to provide accurate and relevant answers to business-related queries. It is a Retrieval-Augmented Generation (RAG) chatbot that uses OpenAI's GPT-4, LangChain, Pinecone, and Streamlit to deliver a seamless and interactive experience.
 
 ## Features
 - **Natural Language Processing**: Understands and processes user queries in natural language.
 - **Contextual Responses**: Provides accurate answers based on the context of the conversation.
+- **Memory Integration**: Maintains conversation context using LangChain's buffer memory.
 - **Interactive Interface**: User-friendly interface built with Streamlit.
 - **Scalable**: Uses Pinecone for efficient and scalable vector search.
 
@@ -19,6 +20,14 @@ business-qa-chatbot/
 └── README.md                        # Project documentation
 ```
 
+## Tech Stack
+- **Backend**: Python, LangChain, OpenAI GPT-4
+- **Vector Database**: Pinecone
+- **Web Framework**: Streamlit
+- **Embedding Model**: text-embedding-ada-002 (via SentenceTransformers)
+- **Other Tools**: Streamlit Chat, OpenAI API
+
+  
 ## Getting Started
 
 ### Prerequisites
