@@ -10,14 +10,14 @@ The Business QA Chatbot is an intelligent question-answering system designed to 
 - **Scalable**: Uses Pinecone for efficient and scalable vector search.
 
 ## Project Structure
-
+```plaintext
 business-qa-chatbot/
 ├── Openai_Pinecone_Indexing_.ipynb  # Jupyter Notebook for indexing documents
 ├── app.py                           # Main application file
 ├── utils.py                         # Utility functions for the chatbot
 ├── requirements.txt                 # Python dependencies
 └── README.md                        # Project documentation
-
+```
 
 ## Getting Started
 
@@ -84,20 +84,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 - [Streamlit](https://streamlit.io) for the interactive web framework.
 - [LangChain](https://langchain.com) for providing tools to build language model-powered applications.
 
-## Contact
-If you have any questions or suggestions, feel free to open an issue or contact me at [your-email@example.com].
-```
-
-### Key Sections Explained:
-- **Overview**: A brief description of the project and its purpose.
-- **Features**: Highlights the main features of the chatbot.
-- **Project Structure**: Provides a visual representation of the project directory.
-- **Getting Started**: Instructions on how to set up the project.
-- **Usage**: Explains how to interact with the chatbot.
-- **Customization**: Guides on how to index new documents and refine the chatbot's behavior.
-- **Contributing**: Encourages others to contribute to the project.
-- **License**: States the project's license.
-- **Acknowledgments**: Credits the tools and services used in the project.
-- **Contact**: Provides a way for users to reach out with questions or suggestions.
-
-Make sure to replace placeholders like `your_openai_api_key`, `your_pinecone_api_key`, and `your-email@example.com` with actual values before using the README.
